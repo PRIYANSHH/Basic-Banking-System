@@ -66,7 +66,7 @@ let user5 = new User({
 let user6 = new User({
     Customer_ID: 6,
     Name: "Kunal Maurya",
-    Email: "mauryKunal23@gmail.com",
+    Email: "maurykunal23@gmail.com",
     Current_Balance: 5780
 });
 let user7 = new User({
@@ -90,7 +90,7 @@ let user9 = new User({
 let user10 = new User({
     Customer_ID: 10,
     Name: "Yuvraj Singh",
-    Email: "Yuvisingh232@gmail.com",
+    Email: "yuvisingh232@gmail.com",
     Current_Balance: 4500
 });
 let defaultUsers = [user1, user2, user3, user4, user5, user6, user7, user8, user9, user10];
