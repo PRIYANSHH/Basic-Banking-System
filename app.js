@@ -123,7 +123,7 @@ app.post("/customer.html", function (req, res) {
     var d = new Date();
     var time2 = d.toUTCString();
     var time = new Date(time2 + " UTC-5:30");
-    var tt = time.toUTCString().replace("GMT", "IST");
+    var time3 = time.toUTCString().replace("GMT", "IST");
     result.forEach(function (res) {
         id4 = id4 + res;
     });
@@ -177,7 +177,7 @@ app.post("/customer.html", function (req, res) {
                 Name2: defaultUsers[id2 - 1].Name,
                 Debit: debit,
                 Status: status,
-                Time: time
+                Time: time3
             }], function (err) {
                 if (err)
                     console.log(err);
