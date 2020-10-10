@@ -1,0 +1,38 @@
+<%- include("header"); %>
+<div class="row">
+    <div class="col wrapper in-right">
+        <p class="secure">Secure Transfers. Anytime, Anywhere.</p>
+        <form action="customer.html" method="GET">
+            <div><button type="submit" class="btn btn-outline-dark view">View</button> </div>
+        </form>
+        <form action="customer.html" method="GET">
+            <div><button type="submit" class="btn btn-outline-dark transfer">Transfer</button></div>
+        </form>
+        <form action="history.html" method="GET">
+            <div><button type="submit" class="btn btn-outline-dark transaction">Transactions History</button>
+            </div>
+        </form>
+    </div>
+    <div class="col disp in-left">
+        <img src="wap.jpg" alt="">
+    </div>
+</div>
+</div>
+</body>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+</script>
+
+</html>

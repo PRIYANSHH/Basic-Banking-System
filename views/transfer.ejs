@@ -1,0 +1,98 @@
+<%- include("header"); %>
+<br>
+<br>
+<div class="row">
+    <div class="col">
+        <table class="table table-bordered col3" id="display-table">
+            <thead>
+                <tr>
+                    <th scope="col" class="disp">User ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col" class="disp">Email</th>
+                    <th scope="col">Current Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="Cid disp"><%=TransferUserDetail.Customer_ID %></th>
+                    <td><%= TransferUserDetail.Name %></td>
+                    <td class="disp"><%= TransferUserDetail.Email %></td>
+                    <td id="curr1">₹ <%= TransferUserDetail.Current_Balance %></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col wrapper">
+        <div><button type="submit" class="btn btn-outline-dark transferMoney">Transfer Money</button></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col showIt">
+        <div class="btn-group dropright">
+            <button type="button" class="btn btn-outline-dark dropdown-toggle dropd" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Select Receiver
+            </button>
+            <div class="dropdown-menu">
+                <% TransferUserTo.forEach(function(user) { %>
+                <% if(user.Customer_ID != showId) { %>
+                <button class="dropdown-item show" type="submit">ID: <%= user.Customer_ID %> |
+                    <%= user.Name %></button>
+                <% } }) %>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col showitin">
+        <p style="font-size: 20px;">Transfer To</p>
+        <p id="receiver"></p>
+        <form action="customer.html" method="post">
+            <div class="form-group pay">
+                <input type="number" pattern="^[0-9]+$" class="form-control inn" required autocomplete="off"
+                    placeholder="₹  Enter Amount" name="name">
+            </div>
+            <div><button type="submit" class="btn btn-outline-dark Confirm" name="touser" value="">Confirm
+                    Payment<input type="hidden" name="chat1" id="hiddenInput1" />
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+<script>
+    $('.transferMoney').click(function () {
+        $('.showIt').css('display', 'unset');
+    });
+    $('.show').on('click', function () {
+        $('#receiver').text($(this).text());
+        $('.showitin').css('display', 'unset');
+    });
+    $('.Confirm').click(function () {
+        this.value = $('#receiver').html();
+        $('#loadit').css("display", "unset");
+    });
+    $(".pay").submit(function (e) {
+        e.preventDefault();
+    });
+    var input1 = document.getElementById('hiddenInput1');
+    input1.value = document.getElementById('curr1').innerHTML;
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+</script>
+
+</html>

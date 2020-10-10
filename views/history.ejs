@@ -1,0 +1,55 @@
+<%- include("header"); %>
+<div class="row">
+    <div class="col">
+        <p class="custom">Transactions History</p>
+        <table class="table table-bordered col22">
+            <thead>
+                <tr>
+                    <th scope="col" class="disp">User ID</th>
+                    <th scope="col">Sender</th>
+                    <th scope="col" class="disp">User ID</th>
+                    <th scope="col">Receiver</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Status</th>
+                    <th scope="col" class="disp">Transaction Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% newTransaction.forEach(function(transaction) { %>
+                <tr class="hovera">
+                    <th scope="row" class="disp"><%= transaction.Customer_ID1 %></th>
+                    <td><%= transaction.Name1 %></td>
+                    <th scope="row" class="disp"><%= transaction.Customer_ID2 %></th>
+                    <td><%= transaction.Name2 %></td>
+                    <td>₹ <%= transaction.Debit %></td>
+                    <% if(transaction.Status === "Success") { %>
+                    <td style="color: green;"><%= transaction.Status %></td>
+                    <% } else { %>
+                    <td style="color:red;"><%= transaction.Status %></td>
+                    <% } %>
+                    <td class="disp"><%= transaction.Time %></td>
+                </tr>
+                <%  }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</body>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+</script>
+
+</html>
