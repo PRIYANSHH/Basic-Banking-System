@@ -330,6 +330,7 @@ input[type=number] {
         margin-right: 5px;
     }
 
+    .custom,
     .secure {
         font-size: 30px;
     }
