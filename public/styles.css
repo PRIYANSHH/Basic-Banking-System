@@ -123,7 +123,7 @@ img {
 .col2 {
     width: 85%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .col22 {
@@ -627,4 +627,10 @@ input[type=number] {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.showitin,
+.col22,
+.tuple {
+    margin-bottom: 100px;
 }
