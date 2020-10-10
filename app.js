@@ -122,9 +122,8 @@ app.post("/customer.html", function (req, res) {
     var id4 = '';
     var d = new Date();
     var time2 = d.toUTCString();
-    var time = d.toLocaleString("en-IN", {
-        timeZoneName: "short"
-    });
+    var time = new Date(time2 + " UTC-5:30");
+    var tt = time.toUTCString().replace("GMT", "IST");
     result.forEach(function (res) {
         id4 = id4 + res;
     });
@@ -224,10 +223,6 @@ app.get("/history.html", function (req, res) {
         }
     });
 });
-let port = process.env.PORT;
-if (port == null || port == "") {
-    port = 3000;
-}
-app.listen(port, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("Server has started successfully.")
 });

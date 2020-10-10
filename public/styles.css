@@ -2,6 +2,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: black !important;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
 }
 
 .navig {
@@ -92,8 +106,8 @@ img {
         display: none;
     }
 
-    .wrapper {
-        margin-top: 100px;
+    .wrapit {
+        margin-top: 80px;
     }
 }
 
@@ -178,9 +192,9 @@ img {
 .showitin {
     margin: auto;
     text-align: center;
-    display: none;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: none;
 }
 
 #receiver {
@@ -282,6 +296,23 @@ input[type=number] {
 @media(max-width: 550px) {
     .pay {
         width: 50%;
+    }
+}
+
+@media(max-width: 430px) {
+    .navbar-brand {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .user,
+    .history {
+        padding: 3px 4px;
+        font-size: 16px;
+    }
+
+    .hovera {
+        font-size: 12px;
     }
 
     .view,
