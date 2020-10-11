@@ -1,15 +1,15 @@
 <%- include("header"); %>
 <div class="row">
     <div class="col wrapper wrapit in-right">
-        <p class="secure">Secure Transfers. Anytime, Anywhere.</p>
+        <p class="secure shine">Secure Transfers. Anytime, Anywhere.</p>
         <form action="customer.html" method="GET">
-            <div><button type="submit" class="btn btn-outline-dark view">View</button> </div>
+            <div><button type="submit" class="btn btn-outline-dark view shine">View</button> </div>
         </form>
         <form action="customer.html" method="GET">
-            <div><button type="submit" class="btn btn-outline-dark transfer">Transfer</button></div>
+            <div><button type="submit" class="btn btn-outline-dark transfer shine">Transfer</button></div>
         </form>
         <form action="history.html" method="GET">
-            <div><button type="submit" class="btn btn-outline-dark transaction">Transaction History</button>
+            <div><button type="submit" class="btn btn-outline-dark transaction shine">Transaction History</button>
             </div>
         </form>
     </div>
@@ -19,6 +19,11 @@
 </div>
 </div>
 </body>
+<style>
+    body {
+        overflow-y: hidden;
+    }
+</style>
 <script>
     document.onreadystatechange = function () {
         if (document.readyState !== "complete") {

@@ -19,12 +19,25 @@ html {
 }
 
 .navig {
-    box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }
 
 .navbar-brand {
     margin-left: 5px;
+}
+
+.dropper {
+    background-color: white;
+    border-style: none;
+    border-radius: 40px;
+    color: #F19833;
+    font-weight: 900;
+    padding: 2px 7px;
+}
+
+.dropper:focus {
+    outline-style: none;
 }
 
 .user,
@@ -97,6 +110,47 @@ img {
     margin-bottom: 50px;
 }
 
+.shine {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.shine:after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 120%;
+    width: 40%;
+    height: 200%;
+    background: #FFF;
+    opacity: 0.6;
+
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+
+    -ms-transform: skewX(-23deg);
+    -webkit-transform: skewX(-23deg);
+    transform: skewX(-60deg);
+
+    will-change: transform;
+}
+
+
+.shine:hover:after {
+    left: -200%;
+    opacity: 0.2;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
 .wrapper div {
     margin-bottom: 15px;
 }
@@ -121,7 +175,7 @@ img {
 }
 
 .col2 {
-    width: 85%;
+    width: 55%;
     margin: auto;
     margin-bottom: 50px;
 }

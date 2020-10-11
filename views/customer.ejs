@@ -20,7 +20,7 @@
     <div class="row ops in-ups">
         <% } %>
 
-        <div class="col-sm-12 col-lg-7">
+        <div class="col">
             <p class="custom">Our Customers</p>
             <table class="table table-bordered col2">
                 <thead>
@@ -29,6 +29,7 @@
                         <th scope="col">Name</th>
                         <th scope="col" class="disp">Email</th>
                         <th scope="col">Current Balance</th>
+                        <th scope="col">Info</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,26 +39,15 @@
                         <td><%= user.Name %></td>
                         <td class="disp"><%= user.Email %></td>
                         <td>₹ <%= user.Current_Balance %></td>
+                        <td>
+                            <form action="transfer.html?id=<%=user.Customer_ID%>" method="post">
+                                <button class="dropper shine" type="submit">view</button>
+                            </form>
+                        </td>
                     </tr>
                     <%  }) %>
                 </tbody>
             </table>
-        </div>
-        <div class="col-sm-12 col-lg-5 tuple">
-            <div class="btn-group dropright">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle dropd" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Select User
-                </button>
-                <div class="dropdown-menu">
-                    <% newList.forEach(function(user) { %>
-                    <form action="transfer.html?id=<%=user.Customer_ID%>" method="post">
-                        <button class="dropdown-item show" type="submit">ID: <%= user.Customer_ID %> |
-                            <%= user.Name %></button>
-                    </form>
-                    <%  }) %>
-                </div>
-            </div>
         </div>
     </div>
 </div>
