@@ -155,15 +155,6 @@ img {
     margin-bottom: 15px;
 }
 
-@media(max-width:790px) {
-    .disp {
-        display: none;
-    }
-
-    .wrapit {
-        margin-top: 80px;
-    }
-}
 
 .custom {
     text-align: center;
@@ -189,6 +180,21 @@ img {
 .col3 {
     width: 55%;
     margin: auto;
+}
+
+@media(max-width:790px) {
+    .disp {
+        display: none;
+    }
+
+    .wrapit {
+        margin-top: 80px;
+    }
+
+    .col3,
+    .col2 {
+        width: 75%;
+    }
 }
 
 .tuple {
@@ -233,8 +239,13 @@ img {
 }
 
 .transferMoney:active {
-    background-color: #FF8C00 !important;
+    background-color: #FF8C00;
+    opacity: 0.9;
 }
+
+
+
+
 
 .showIt {
     margin: auto;
@@ -269,6 +280,11 @@ img {
     box-shadow: none !important;
     color: white;
     border-color: white !important;
+}
+
+.Confirm:active {
+    background-color: #FF8C00;
+    opacity: 0.9;
 }
 
 .showitinafter {
@@ -351,12 +367,29 @@ input[type=number] {
     .pay {
         width: 50%;
     }
+
+    .col2 {
+        width: 80%;
+    }
+
+    .col3 {
+        width: 85%;
+    }
+
+    .dropper {
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 430px) {
     .navbar-brand {
         margin-left: 0;
         font-size: 16px;
+    }
+
+    .col3,
+    .col2 {
+        width: 90%;
     }
 
     .user,
