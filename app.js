@@ -2,17 +2,17 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const app = express();
-
+const keys = require(__dirname + '/keys.js');
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.set("view engine", "ejs");
-var con1 = mongoose.createConnection('mongodb+srv://admin-Priyanshu:PRiy4025@@basic0.fqp9b.mongodb.net/usersDB', {
+var con1 = mongoose.createConnection('mongodb+srv://admin-Priyanshu:' + keys.key + '@basic0.fqp9b.mongodb.net/usersDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
-var con2 = mongoose.createConnection('mongodb+srv://admin-Priyanshu:PRiy4025@@basic0.fqp9b.mongodb.net/transactionsDB', {
+var con2 = mongoose.createConnection('mongodb+srv://admin-Priyanshu:' + keys.key + '@basic0.fqp9b.mongodb.net/transactionsDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
