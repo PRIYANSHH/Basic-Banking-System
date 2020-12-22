@@ -100,12 +100,23 @@ app.get("/", function (req, res) {
 let id = 0;
 app.post("/transfer.html", function (req, res) {
     id = Number(req.query.id);
+    var newid;
+    User.find({}, function (err, data) {
+        if (err) {
+            console.log(err);
+        } else {
+            data.forEach(function (cid) {
+                if (cid.Customer_ID === id)
+                    newid = cid;
+            });
+        }
+    });
     User.find({}, function (err, debitUser) {
         if (err) {
             console.log(err);
         } else {
             res.render("transfer", {
-                TransferUserDetail: debitUser[id - 1],
+                TransferUserDetail: newid,
                 TransferUserTo: debitUser,
                 showId: id
             });
@@ -203,6 +214,7 @@ app.get("/customer.html", function (req, res) {
             });
             res.redirect("/customer.html");
         } else {
+
             res.render("customer", {
                 newList: foundUsers,
                 success: message,
