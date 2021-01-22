@@ -35,6 +35,9 @@
     </div>
 </div>
 </div>
+<footer>
+    <p class="foot">© Copyright <span id="yyear"></span> PSDev</p>
+</footer>
 </body>
 <script>
     document.onreadystatechange = function () {
@@ -50,6 +53,8 @@
                 "body").style.visibility = "visible";
         }
     };
+    let year = new Date().getFullYear();
+    document.getElementById('yyear').innerHTML = year;
 </script>
 
 </html>
