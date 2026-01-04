@@ -1,51 +1,51 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: black !important;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: black !important;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
 html {
-    margin: 0;
-    padding: 0;
-    overflow-x: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
 }
 
 .container {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .foot {
-    text-align: center;
-    padding-bottom: 0;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: black;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: black;
 }
 
 .navig {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
 
 .navbar-brand {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .dropper {
-    background-color: white;
-    border-style: none;
-    border-radius: 40px;
-    color: #F19833;
-    font-weight: 900;
-    padding: 2px 7px;
+  background-color: white;
+  border-style: none;
+  border-radius: 40px;
+  color: #f19833;
+  font-weight: 900;
+  padding: 2px 7px;
 }
 
 .dropper:focus {
-    outline-style: none;
+  outline-style: none;
 }
 
 .user,
@@ -53,9 +53,9 @@ html {
 .view,
 .transfer,
 .transaction {
-    margin-right: 20px;
-    font-weight: 600;
-    color: black;
+  margin-right: 20px;
+  font-weight: 600;
+  color: black;
 }
 
 .user:hover,
@@ -63,8 +63,8 @@ html {
 .view:hover,
 .transfer:hover,
 .transaction:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .user:active,
@@ -72,10 +72,10 @@ html {
 .view:active,
 .transfer:active,
 .transaction:active {
-    background-color: #F19833 !important;
-    color: white;
-    box-shadow: none !important;
-    border-color: white !important;
+  background-color: #f19833 !important;
+  color: white;
+  box-shadow: none !important;
+  border-color: white !important;
 }
 
 .user:focus,
@@ -83,649 +83,643 @@ html {
 .view:focus,
 .transfer:focus,
 .transaction:focus {
-    background-color: #F19833 !important;
-    box-shadow: none !important;
-    color: white;
-    border-color: white;
+  background-color: #f19833 !important;
+  box-shadow: none !important;
+  color: white;
+  border-color: white;
 }
 
 img {
-    width: 100%;
-    height: 707px;
+  width: 100%;
+  height: 707px;
 }
 
 .view,
 .transaction,
 .transfer {
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .wrapper {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 .secure {
-    color: #F19833;
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
+  color: #f19833;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 .shine {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .shine:after {
-    content: "";
-    position: absolute;
-    top: -20%;
-    left: 120%;
-    width: 40%;
-    height: 200%;
-    background: #FFF;
-    opacity: 0.6;
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 120%;
+  width: 40%;
+  height: 200%;
+  background: #fff;
+  opacity: 0.6;
 
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
 
-    -ms-transform: skewX(-23deg);
-    -webkit-transform: skewX(-23deg);
-    transform: skewX(-60deg);
+  -ms-transform: skewX(-23deg);
+  -webkit-transform: skewX(-23deg);
+  transform: skewX(-60deg);
 
-    will-change: transform;
+  will-change: transform;
 }
 
-
 .shine:hover:after {
-    left: -200%;
-    opacity: 0.2;
-    background-color: rgba(255, 255, 255, 0);
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -ms-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+  left: -200%;
+  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .wrapper div {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-
 .custom {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #F19833;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f19833;
 }
 
 .col2 {
-    width: 65%;
-    margin: auto;
-    margin-bottom: 50px;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .col22 {
-    width: 65%;
-    margin: auto;
-    margin-bottom: 50px;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .col3 {
-    width: 55%;
-    margin: auto;
+  width: 55%;
+  margin: auto;
 }
 
-@media(max-width:790px) {
-    .disp {
-        display: none;
-    }
+@media (max-width: 790px) {
+  .disp {
+    display: none;
+  }
 
-    .wrapit {
-        margin-top: 80px;
-    }
+  .wrapit {
+    margin-top: 80px;
+  }
 
-    .col3,
-    .col2 {
-        width: 75%;
-    }
+  .col3,
+  .col2 {
+    width: 75%;
+  }
 }
 
 .tuple {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .dropd {
-    color: black;
+  color: black;
 }
 
 .dropd:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .dropd:focus,
 .dropd:active {
-    background-color: #F19833 !important;
-    box-shadow: none !important;
-    color: white !important;
-    border-color: white !important;
+  background-color: #f19833 !important;
+  box-shadow: none !important;
+  color: white !important;
+  border-color: white !important;
 }
 
 .show:focus {
-    background-color: whitesmoke;
-    color: black;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .transferMoney,
 .transferMoney:hover,
 .transferMoney:focus {
-    margin-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 40px;
-    background-color: #F19833 !important;
-    box-shadow: none !important;
-    color: white;
-    border-color: white !important;
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 40px;
+  background-color: #f19833 !important;
+  box-shadow: none !important;
+  color: white;
+  border-color: white !important;
 }
 
 .transferMoney:active {
-    background-color: #FF8C00;
-    opacity: 0.9;
+  background-color: #ff8c00;
+  opacity: 0.9;
 }
 
-
-
-
-
 .showIt {
-    margin: auto;
-    text-align: center;
-    display: none;
-    font-size: 50px;
+  margin: auto;
+  text-align: center;
+  display: none;
+  font-size: 50px;
 }
 
 .showitin {
-    margin: auto;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: none;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
 }
 
 #receiver {
-    font-size: 25px;
-    font-weight: 700;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .Confirm,
 .Confirm:hover,
 .Confirm:focus {
-    margin-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 40px;
-    background-color: #F19833 !important;
-    box-shadow: none !important;
-    color: white;
-    border-color: white !important;
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 40px;
+  background-color: #f19833 !important;
+  box-shadow: none !important;
+  color: white;
+  border-color: white !important;
 }
 
 .Confirm:active {
-    background-color: #FF8C00;
-    opacity: 0.9;
+  background-color: #ff8c00;
+  opacity: 0.9;
 }
 
 .showitinafter {
-    margin: auto;
-    text-align: center;
-    display: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin: auto;
+  text-align: center;
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .pop {
-    width: 25%;
-    text-align: center;
-    margin: auto;
-    font-size: 16px;
+  width: 25%;
+  text-align: center;
+  margin: auto;
+  font-size: 16px;
 }
 
 .pay {
-    width: 15%;
-    margin: auto;
+  width: 15%;
+  margin: auto;
 }
 
 ::placeholder {
-    text-align: center;
+  text-align: center;
 }
 
 .inn {
-    text-align: center;
+  text-align: center;
 }
 
 .inn:focus,
 .inn:active {
-    box-shadow: none !important;
-    border-color: black;
+  box-shadow: none !important;
+  border-color: black;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .hovera:hover {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
-@media(max-width: 992px) {
-    .tuple {
-        margin: auto;
-        margin-top: 10px;
-        text-align: center;
-    }
+@media (max-width: 992px) {
+  .tuple {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+  }
 
-    .pay {
-        width: 50%;
-    }
+  .pay {
+    width: 50%;
+  }
 
-    body {
-        font-size: 15px;
-        overflow-x: hidden;
-    }
+  body {
+    font-size: 15px;
+    overflow-x: hidden;
+  }
 }
 
-@media(max-width: 1050px) {
-    .pay {
-        width: 30%;
-    }
+@media (max-width: 1050px) {
+  .pay {
+    width: 30%;
+  }
 
-    .pop {
-        width: 40%;
-        font-size: 12px;
-    }
+  .pop {
+    width: 40%;
+    font-size: 12px;
+  }
 }
 
-@media(max-width: 550px) {
-    .pay {
-        width: 50%;
-    }
+@media (max-width: 550px) {
+  .pay {
+    width: 50%;
+  }
 
-    .col2 {
-        width: 80%;
-    }
+  .col2 {
+    width: 80%;
+  }
 
-    .col3 {
-        width: 85%;
-    }
+  .col3 {
+    width: 85%;
+  }
 
-    .dropper {
-        font-size: 14px;
-    }
+  .dropper {
+    font-size: 14px;
+  }
 }
 
-@media(max-width: 430px) {
-    .navbar-brand {
-        margin-left: 0;
-        font-size: 16px;
-    }
+@media (max-width: 430px) {
+  .navbar-brand {
+    margin-left: 0;
+    font-size: 16px;
+  }
 
-    .col3,
-    .col2 {
-        width: 90%;
-    }
+  .col3,
+  .col2 {
+    width: 90%;
+  }
 
-    .user,
-    .history {
-        padding: 3px 4px;
-        font-size: 16px;
-    }
+  .user,
+  .history {
+    padding: 3px 4px;
+    font-size: 16px;
+  }
 
-    .hovera {
-        font-size: 12px;
-    }
+  .hovera {
+    font-size: 12px;
+  }
 
-    .view,
-    .transaction,
-    .transfer {
-        font-size: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+  .view,
+  .transaction,
+  .transfer {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-    .user,
-    .history {
-        margin-right: 5px;
-    }
+  .user,
+  .history {
+    margin-right: 5px;
+  }
 
-    .custom,
-    .secure {
-        font-size: 30px;
-    }
+  .custom,
+  .secure {
+    font-size: 30px;
+  }
 
-    .pop {
-        width: 70%;
-        font-size: 12px;
-    }
+  .pop {
+    width: 70%;
+    font-size: 12px;
+  }
 }
 
 @-webkit-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 
-    to {
-        -webkit-transform: translate3d(0, -30px, 0);
-        opacity: 1;
-    }
+  to {
+    -webkit-transform: translate3d(0, -30px, 0);
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -o-transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    -o-transform: translate3d(0, 0, 0);
+  }
 
-    to {
-        -o-transform: translate3d(0, -30px, 0);
-        opacity: 1;
-    }
+  to {
+    -o-transform: translate3d(0, -30px, 0);
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -moz-transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    -moz-transform: translate3d(0, 0, 0);
+  }
 
-    to {
-        -moz-transform: translate3d(0, -30px, 0);
-        opacity: 1;
-    }
+  to {
+    -moz-transform: translate3d(0, -30px, 0);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 
-    to {
-        transform: translate3d(0, -30px, 0);
-        opacity: 0;
-    }
+  to {
+    transform: translate3d(0, -30px, 0);
+    opacity: 0;
+  }
 }
 
 .in-up {
-    -webkit-animation-name: fadeInUp;
-    -moz-animation-name: fadeInUp;
-    -o-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -o-animation-delay: 3s;
-    animation-delay: 3s;
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 @-webkit-keyframes fadeInUps {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 
-    to {
-        -webkit-transform: translate3d(0, -40px, 0);
-        opacity: 1;
-    }
+  to {
+    -webkit-transform: translate3d(0, -40px, 0);
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeInUps {
-    from {
-        opacity: 0;
-        -o-transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    -o-transform: translate3d(0, 0, 0);
+  }
 
-    to {
-        -o-transform: translate3d(0, -40px, 0);
-        opacity: 1;
-    }
+  to {
+    -o-transform: translate3d(0, -40px, 0);
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeInUps {
-    from {
-        opacity: 0;
-        -moz-transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    -moz-transform: translate3d(0, 0, 0);
+  }
 
-    to {
-        -moz-transform: translate3d(0, -40px, 0);
-        opacity: 1;
-    }
+  to {
+    -moz-transform: translate3d(0, -40px, 0);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUps {
-    from {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 
-    to {
-        transform: translate3d(0, -40px, 0);
-        opacity: 1;
-    }
+  to {
+    transform: translate3d(0, -40px, 0);
+    opacity: 1;
+  }
 }
 
 .in-ups {
-    -webkit-animation-name: fadeInUps;
-    -moz-animation-name: fadeInUps;
-    -o-animation-name: fadeInUps;
-    animation-name: fadeInUps;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -o-animation-delay: 3s;
-    animation-delay: 3s;
+  -webkit-animation-name: fadeInUps;
+  -moz-animation-name: fadeInUps;
+  -o-animation-name: fadeInUps;
+  animation-name: fadeInUps;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 @-webkit-keyframes fadeInLeft {
-    from {
-        opacity: 0.5;
-        -webkit-transform: translatex(100px);
-    }
+  from {
+    opacity: 0.5;
+    -webkit-transform: translatex(100px);
+  }
 
-    to {
-        opacity: 1;
-        -webkit-transform: translatex(0);
-    }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+  }
 }
 
 @-o-keyframes fadeInLeft {
-    from {
-        opacity: 0.5;
-        -o-transform: translatex(100px);
-    }
+  from {
+    opacity: 0.5;
+    -o-transform: translatex(100px);
+  }
 
-    to {
-        opacity: 1;
-        -o-transform: translatex(0);
-    }
+  to {
+    opacity: 1;
+    -o-transform: translatex(0);
+  }
 }
 
 @-moz-keyframes fadeInLeft {
-    from {
-        opacity: 0.5;
-        -moz-transform: translatex(100px);
-    }
+  from {
+    opacity: 0.5;
+    -moz-transform: translatex(100px);
+  }
 
-    to {
-        opacity: 1;
-        -moz-transform: translatex(0);
-    }
+  to {
+    opacity: 1;
+    -moz-transform: translatex(0);
+  }
 }
 
 @keyframes fadeInLeft {
-    from {
-        opacity: 0.5;
-        transform: translatex(100px);
-    }
+  from {
+    opacity: 0.5;
+    transform: translatex(100px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translatex(0);
-    }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
 }
 
 .in-left {
-    -webkit-animation-name: fadeInLeft;
-    -moz-animation-name: fadeInLeft;
-    -o-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fadeInRight {
-    from {
-        opacity: 0.5;
-        -webkit-transform: translatex(-100px);
-    }
+  from {
+    opacity: 0.5;
+    -webkit-transform: translatex(-100px);
+  }
 
-    to {
-        opacity: 1;
-        -webkit-transform: translatex(0);
-    }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+  }
 }
 
 @-o-keyframes fadeInRight {
-    from {
-        opacity: 0.5;
-        -o-transform: translatex(-100px);
-    }
+  from {
+    opacity: 0.5;
+    -o-transform: translatex(-100px);
+  }
 
-    to {
-        opacity: 1;
-        -o-transform: translatex(0);
-    }
+  to {
+    opacity: 1;
+    -o-transform: translatex(0);
+  }
 }
 
 @-moz-keyframes fadeInRight {
-    from {
-        opacity: 0.5;
-        -moz-transform: translatex(-100px);
-    }
+  from {
+    opacity: 0.5;
+    -moz-transform: translatex(-100px);
+  }
 
-    to {
-        opacity: 1;
-        -moz-transform: translatex(0);
-    }
+  to {
+    opacity: 1;
+    -moz-transform: translatex(0);
+  }
 }
 
 @keyframes fadeInRight {
-    from {
-        opacity: 0.5;
-        transform: translatex(-100px);
-    }
+  from {
+    opacity: 0.5;
+    transform: translatex(-100px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translatex(0);
-    }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
 }
 
 .in-right {
-    -webkit-animation-name: fadeInRight;
-    -moz-animation-name: fadeInRight;
-    -o-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 #loader {
-    border: 2px solid #f3f3f3;
-    border-radius: 100%;
-    border-top: 8px solid #065c6f;
-    width: 70px;
-    height: 70px;
-    animation: spin 1s linear infinite;
+  border: 2px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 8px solid #065c6f;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .center {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .showitin,
 .col22,
 .tuple {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
